@@ -1,20 +1,20 @@
 <!-- nav bar -->
 <div class="navbar">
-    <div class="logo">logo</div>
-    <div class="student-homepage">Student Homepage</div>
-    <div class="right-buttons">
-      <!-- use font awesome -->
-      <button class="home">H</button>
-      <button class="actions">A</button>
-      <button class="sidnav">S</button>
-    </div>
+  <div class="logo">logo</div>
+  <div class="student-homepage">Student Homepage</div>
+  <div class="right-buttons">
+    <!-- use font awesome -->
+    <button class="home"><fa-icon [icon]="faHouse"></fa-icon></button>
+    <button class="actions"><fa-icon [icon]="faEllipsesVertical"></fa-icon></button>
+    <button class="sidnav"><fa-icon [icon]="faCompass"></fa-icon></button>
+  </div>
 </div>
 
 <!-- body -->
 <div class="body">
   <div class="tiles">
-    <div class="item" *ngFor="let tileItem of tileItems ">
-      <h4>{{tileItem}}</h4>
+    <div class="item" *ngFor="let tileItem of tileItems">
+      <h4>{{ tileItem }}</h4>
       <div>Image</div>
       <div>not available</div>
     </div>
