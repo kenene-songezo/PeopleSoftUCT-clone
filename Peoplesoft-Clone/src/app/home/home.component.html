@@ -13,9 +13,9 @@
 <!-- body -->
 <div class="body">
   <div class="tiles">
-    <div class="item" *ngFor="let tileItem of tileItems">
-      <h4>{{ tileItem }}</h4>
-      <div>Image</div>
+    <div class="item">
+      <h4 *ngFor="let tileItem of tileItems">{{ tileItem }}</h4>
+      <div *ngFor="let faItem of faArr"><fa-icon [icon]="faItem"></fa-icon></div>
       <div>not available</div>
     </div>
   </div>
