@@ -44,6 +44,10 @@ button{
   margin: 0;
 }
 
+.item>fa-icon{
+  font-size: 40px;
+}
+
 
 .footer{
   width: 100%;

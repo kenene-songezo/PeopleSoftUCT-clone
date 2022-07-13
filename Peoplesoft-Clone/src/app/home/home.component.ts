@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TileItems } from './types/types.inteface';
 import {
   faWallet,
   faBuildingColumns,
@@ -29,41 +30,70 @@ export class HomeComponent {
   faEllipsesVertical = faEllipsisVertical;
   faCompass = faCompass;
   
-
-  faArr:  any[]= [faWallet,
-    faUser,
-    faUser,
-    faFileLines,
-    faUserGraduate,
-    faCalendarDays,
-    faClipboard,
-    faCalendarDays,
-    faCoins,
-    faBuildingColumns,
-    faBuildingColumns,
-    faPeopleGroup,
-    faListCheck,
-    faArrowsSpin,
-    faEllipsisVertical,
-    faFileLines,
-  ];
-
-  tileItems: string[] = [
-    'Allowances',
-    'Profile',
-    'Application Summary',
-    'Admissions',
-    'Academic Records',
-    'Meeting Attendance',
-    'MoU/PPA',
-    'Manage Classes',
-    'Student Finance',
-    'Undergraduate Funding',
-    'Postgrad & Postddoc Funding',
-    'Join & Societies',
-    'Tasks',
-    'Service Requests',
-    'Important Links',
-    'Offers',
+  tileItems: TileItems[] = [
+    {
+      heading: 'Allowances',
+      icon: faWallet, 
+    },
+    {
+      heading: 'Profile',
+      icon: faUser,
+    },
+    {
+        heading: 'Application Summary',
+        icon: faUser,
+    },
+    {
+      heading:'Admissions',
+      icon: faFileLines,
+    },
+    {
+      heading: 'Academic Records',
+        icon: faUserGraduate, 
+    },
+    {
+      heading: 'Meeting Attendance',
+      icon:faCalendarDays,
+    },
+    {
+      heading: 'MoU/PPA',
+      icon:faClipboard,
+    },
+    {
+      heading: 'Manage Classes',
+      icon:faCalendarDays,
+    },
+    {
+      heading: 'Student Finance',
+      icon: faCoins,
+    },
+    {
+      heading: 'Undergraduate Funding',
+      icon:faBuildingColumns
+    },
+    {
+      heading: 'Postgrad & Postddoc Funding',
+      icon:faBuildingColumns
+    },
+    {
+      heading: 'Join & Societies',
+      icon: faPeopleGroup,
+    },
+    {
+      heading: 'Tasks',
+      icon: faListCheck,
+    },
+    {
+      heading: 'Service Requests',
+      icon: faArrowsSpin,
+    },
+    {
+      heading: 'Important Links',
+      icon: faEllipsisVertical,
+    },
+    {
+      heading: 'Offers',
+      icon: faFileLines,
+    }
   ];
 }
