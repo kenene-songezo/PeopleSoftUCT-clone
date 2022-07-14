@@ -1,0 +1,22 @@
+<!-- nav bar -->
+<div class="navbar">
+  <div class="left-of-nav" *ngIf="isHome; else back">logo</div>
+  <ng-template #back>
+    <a
+      routerLink="/"
+      routerLinkActiveOptions="{ exact: true }"
+      style="text-decoration: none"
+    >
+      <button class="backButton">Student Homepage</button>
+    </a>
+  </ng-template>
+  <div class="student-homepage">{{ midNav }}</div>
+  <div class="right-buttons">
+    <!-- use font awesome -->
+    <button class="home"><fa-icon [icon]="faHouse"></fa-icon></button>
+    <button class="actions">
+      <fa-icon [icon]="faEllipsesVertical"></fa-icon>
+    </button>
+    <button class="sidnav"><fa-icon [icon]="faCompass"></fa-icon></button>
+  </div>
+</div>
