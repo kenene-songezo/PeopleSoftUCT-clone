@@ -14,7 +14,7 @@ import { ShellComponent } from './shell/shell.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    AcademicRecordsComponent
+    AcademicRecordsComponent,
     ManageClassesComponent,
     NavBarComponent,
     ShellComponent

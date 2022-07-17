@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TileItems } from '../types/types.inteface';
+import { TileItems } from '../types/tileItems.inteface';
 import {
   faWallet,
   faBuildingColumns,

@@ -5,17 +5,14 @@
 ></app-nav-bar>
 
 <!-- header -->
-<div class="header">
+<div class="header" *ngIf="hasHeader">
   <p>2022</p>
   <p>Undergraduate</p>
 </div>
 
 <!-- side nav -->
 <div id="mySidenav" class="sidenav">
-  <a href="#">&times; About</a>
-  <a href="#">&times; Services</a>
-  <a href="#">&times; Clients</a>
-  <a href="#">&times; Contact</a>
+  <a href="#" *ngFor="let navItem of navList"><fa-icon [icon]="navItem.icon"></fa-icon> {{navItem.title}}</a>
 </div>
 
 <!-- page content -->
