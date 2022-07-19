@@ -42,3 +42,8 @@
   color: #969696;
 }
 
+.page-content{
+  font-size: 50px;
+  display: block;
+  margin-left: 300px;
+}

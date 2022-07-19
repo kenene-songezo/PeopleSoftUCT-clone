@@ -1,23 +1,7 @@
-<!-- split into three sections-->
+<app-shell
+  [midNav]="midNav"
+  [navList]="navList"
+  [hasHeader]="true"
+></app-shell>
 
-<div class="ac-rec-body">
-  <!--Section 1-->
-  <div class="topsection">
-    academic-records works!
-  </div>
-  <!--end Section1-->
 
-  <div class="mainsection">
-    <!--Section 2-->
-    <div class="sidenavbar">
-        <button *ngFor="let buttonTile of buttonArr">
-            <fa-icon [icon]="buttonTile.icon"></fa-icon>
-            {{buttonTile.name}}
-        </button>
-    </div>
-    <!--Section 3-->
-    <div class="pagecontent">
-      academic-records works!
-    </div>
-  </div>
-</div>
