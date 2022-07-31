@@ -1,0 +1,10 @@
+<div [ngSwitch]="academicRPath">
+  <app-view-grades *ngSwitchCase="'view-grades'"></app-view-grades>
+  <app-view-academic-record *ngSwitchCase="'view-academic-records'"></app-view-academic-record>
+  <app-communication-list *ngSwitchCase="'communication-list'"></app-communication-list>
+  <app-progress-report *ngSwitchCase="'progress-report'"></app-progress-report>
+  <app-change-of-ccurriculum *ngSwitchCase="'change-of-ccurriculum'"></app-change-of-ccurriculum>
+  <app-proof-of-registration *ngSwitchCase="'proof-of-registration'"></app-proof-of-registration>
+  <app-request-year-results *ngSwitchCase="'request-year-results'"></app-request-year-results>
+  <app-mid-term *ngSwitchCase="'mid-term'"></app-mid-term>
+</div>
