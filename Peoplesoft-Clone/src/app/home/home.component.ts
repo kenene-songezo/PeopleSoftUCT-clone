@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TileItems } from '../types/tileItems.inteface';
 import {
   faWallet,
   faBuildingColumns,
@@ -16,6 +15,7 @@ import {
   faFileLines,
   faEllipsisVertical,
 } from '@fortawesome/free-solid-svg-icons';
+import { TileItems } from '../types/TileItems.inteface';
 
 @Component({
   selector: 'app-home',

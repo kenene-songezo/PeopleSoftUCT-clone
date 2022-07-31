@@ -9,6 +9,7 @@ import { AcademicRecordsComponent } from './academic-records/academic-records.co
 import { ManageClassesComponent } from './manage-classes/manage-classes.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ShellComponent } from './shell/shell.component';
+import { ViewMyClassesComponent } from './manage-classes/view-my-classes/view-my-classes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ShellComponent } from './shell/shell.component';
     AcademicRecordsComponent,
     ManageClassesComponent,
     NavBarComponent,
-    ShellComponent
+    ShellComponent,
+    ViewMyClassesComponent
   ],
   imports: [
     BrowserModule,

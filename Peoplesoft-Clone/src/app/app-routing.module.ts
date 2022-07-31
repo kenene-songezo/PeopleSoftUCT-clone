@@ -5,7 +5,7 @@ import { ManageClassesComponent } from './manage-classes/manage-classes.componen
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  {path:'manage-classes', component: ManageClassesComponent},
+  {path:'manage-classes', component: ManageClassesComponent}
 ];
 
 @NgModule({
