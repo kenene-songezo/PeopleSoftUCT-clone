@@ -12,7 +12,7 @@ export class ShellComponent implements OnInit{
   select: String = "";
   constructor(private route: ActivatedRoute, private router: Router){}
   ngOnInit(): void {
-    
+
   }
   @Input() midNav!: string;
   @Input() navList!: SideNav[];
@@ -21,7 +21,7 @@ export class ShellComponent implements OnInit{
   setselected(navItem: SideNav){
     this.select = navItem.title;
   }
-  
+
   goToSelected(navItem: SideNav){
     this.router.navigate(['/academic-records',{path:navItem.path}],{relativeTo: this.route});
   }
