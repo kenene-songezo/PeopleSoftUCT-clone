@@ -18,6 +18,9 @@ import { ProofOfRegistrationComponent } from './academic-records/proof-of-regist
 import { RequestYearResultsComponent } from './academic-records/request-year-results/request-year-results.component';
 import { MidTermComponent } from './academic-records/mid-term/mid-term.component';
 import { ViewMyClassesComponent } from './manage-classes/view-my-classes/view-my-classes.component';
+import { NavListsService } from './nav-lists.service';
+import { ShoppingCartComponent } from './manage-classes/shopping-cart/shopping-cart.component';
+import { SearchClassAndEnrollComponent } from './manage-classes/search-class-and-enroll/search-class-and-enroll.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,8 @@ import { ViewMyClassesComponent } from './manage-classes/view-my-classes/view-my
     RequestYearResultsComponent,
     MidTermComponent,
     ViewMyClassesComponent,
+    ShoppingCartComponent,
+    SearchClassAndEnrollComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,7 @@ import { ViewMyClassesComponent } from './manage-classes/view-my-classes/view-my
     FontAwesomeModule,
   ],
   exports: [ShellComponent, ViewMyClassesComponent],
-  providers: [],
+  providers: [NavListsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {  }
