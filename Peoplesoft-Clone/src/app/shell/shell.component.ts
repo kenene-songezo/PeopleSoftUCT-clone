@@ -23,9 +23,6 @@ export class ShellComponent implements OnInit{
   }
 
   goToSelected(navItem: SideNav){
-    console.log(this.route.snapshot.url);
-    console.log(navItem.path);
-
     this.router.navigate([navItem.path], {relativeTo: this.route});
   }
 
