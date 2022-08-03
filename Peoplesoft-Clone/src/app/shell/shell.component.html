@@ -8,7 +8,7 @@
 </div>
 
 <!-- side nav -->
-<div id="mySidenav" class="sidenav">
+<div class="sidenav">
   <a *ngFor="let navItem of navList" (click)="goToSelected(navItem)"
     ><fa-icon [icon]="navItem.icon"></fa-icon> {{ navItem.title }}</a
   >

@@ -21,6 +21,7 @@ import { ViewMyClassesComponent } from './manage-classes/view-my-classes/view-my
 import { NavListsService } from './nav-lists.service';
 import { ShoppingCartComponent } from './manage-classes/shopping-cart/shopping-cart.component';
 import { SearchClassAndEnrollComponent } from './manage-classes/search-class-and-enroll/search-class-and-enroll.component';
+import { TablesComponent } from './tables/tables.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { SearchClassAndEnrollComponent } from './manage-classes/search-class-and
     ViewMyClassesComponent,
     ShoppingCartComponent,
     SearchClassAndEnrollComponent,
+    TablesComponent,
   ],
   imports: [
     BrowserModule,
