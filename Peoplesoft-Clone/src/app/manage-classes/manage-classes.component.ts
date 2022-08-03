@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   faCalendarDays,
   faCartShopping,
   faMagnifyingGlass,
 } from '@fortawesome/free-solid-svg-icons';
+import { NavListsService } from '../nav-lists.service';
 import { SideNav } from '../types/sideNav.interface';
 
 @Component({
@@ -11,20 +12,12 @@ import { SideNav } from '../types/sideNav.interface';
   templateUrl: './manage-classes.component.html',
   styleUrls: ['./manage-classes.component.css'],
 })
-export class ManageClassesComponent {
+export class ManageClassesComponent implements OnInit{
   midNav: string = 'View My Classes';
-  navList: SideNav[] = [
-    {
-      title: 'View My Classes',
-      icon: faCalendarDays,
-    },
-    {
-      title: 'Shopping cart',
-      icon: faCartShopping,
-    },
-    {
-      title: 'Search Class and Enroll',
-      icon: faMagnifyingGlass,
-    },
-  ];
+  navList!: SideNav[];
+  constructor(private navListService: NavListsService){}
+
+  ngOnInit(){
+    this.navList = this.navListService.navList;
+  }
 }

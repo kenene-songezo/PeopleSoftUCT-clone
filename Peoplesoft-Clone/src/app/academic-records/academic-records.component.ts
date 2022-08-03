@@ -11,12 +11,12 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 })
 export class AcademicRecordsComponent implements OnInit{
 
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
-  
+
   midNav: string = "Select a Value";
   navList: SideNav[] = [
     {
